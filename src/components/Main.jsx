@@ -1,6 +1,6 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import { Navbar, Home } from "./";
+import { Navbar, Home, Bouquets, Seeds } from "./";
 
 const Main = () => {
     return(
@@ -8,6 +8,8 @@ const Main = () => {
             <Navbar/>
             <Routes>
                 <Route exact path="/" element={ < Home/> } />
+                <Route exact path="/shop-bouquets" element = { < Bouquets /> } />
+                <Route exact path="/shop-seeds" element = { < Seeds /> } />
             </Routes>
         </div>
     )
